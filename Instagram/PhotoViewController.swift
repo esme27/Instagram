@@ -53,7 +53,7 @@ class PhotoViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableViewLabel.dequeueReusableCellWithIdentifier("photoCell", forIndexPath: <#T##NSIndexPath#>) as! PhotoTableViewCell
+        let cell = tableViewLabel.dequeueReusableCellWithIdentifier("photoCell", forIndexPath: indexPath) as! PhotoTableViewCell
         
         let photo = photos![indexPath.row]
         
